@@ -1,0 +1,150 @@
+html {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+@media all and (max-width: 600px) {
+  .content,
+  .footer {
+    flex-direction: column;
+  }
+}
+a {
+  color: #00B7FF;
+}
+h1 {
+  text-align: center;
+}
+.page-wrapper {
+  height: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: rgb(235, 235, 235);
+  border-radius: 2%;
+  box-shadow: 0 10px 15px gray;
+}
+.page-wrapper div {
+  align-self: center;
+}
+.page-title {
+  max-height: 100px;
+  flex: 0;
+}
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  margin: 10px
+}
+
+.personal-photo {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  align-self:center;
+}
+.personal-photo label {
+  padding: 8px 25px 8px 25px;
+  font-size: 12px;
+  color: gray;
+  background-color: Silver;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 100%;
+}
+img {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  border: 1px solid white;
+}
+input[type="file"] {
+  overflow: hidden;
+  border: none !important;
+  display: none;
+}
+.about-myself {
+  margin: 10px;
+}
+.footer {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin: 10px
+}
+.info1 {
+  margin: 10px;
+  display: flex;
+}
+.info2 {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.info2 div {
+  margin-bottom: 10px;
+}
+.detailed-information {
+  display: flex;
+}
+
+ul{
+  list-style: none;
+  width: 550px;
+  height: 80px;
+}
+
+ul li{
+  float: left;
+  width: 75px;
+  height: 70px;
+  border: 3px solid #fff;
+  margin-right: 36px;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+ul li:last-child{
+  margin-right: 0;
+}
+
+ul li .fa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 30px;
+  transition: all 0.5s linear;
+}
+
+ul li:hover{
+  background: #fff;
+  box-shadow: 0 0 30px 3px #fff;
+}
+
+ul li:hover .fa{
+  color: #f06060;
+}
+
+@media screen and (max-width: 640px){
+  .wrapper ul{
+      width: 100px;
+  }
+  .wrapper ul li{
+      margin-top: 20px;
+  }
+}

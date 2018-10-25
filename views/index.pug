@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  div(class='page-wrapper')
+    div(class='page-title')
+      h1 My page
+    div(class='content')
+      
+      div(class='personal-photo') 
+        img(src='http://localhost:3000/images/default.jpg', id='image')
+        label
+          input(
+            type='file'
+            name='photo'
+            onchange='showImage.call(this)'
+            )
+          span Upload photo
+      div(class='about-myself') Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis corporis nihil labore provident, debitis voluptate cumque eveniet nam velit in nulla, culpa quia doloribus facilis porro et sed possimus totam!
+    div(class='footer')
+      div(class='detailed-information')
+        div(class='info1') Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum tempore atque, provident tenetur ipsam dolor consectetur dignissimos adipisci temporibus omnis earum sed pariatur quasi, qui enim consequuntur consequatur minus ab.
+        div(class='info2') 
+          div Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          div Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      div(class='bar')
+        ul
+          li
+            i(class='fa fa-facebook' aria-hidden='true') 
+          li
+            i(class='fa fa-twitter' aria-hidden='true')
+          li
+            i(class='fa fa-google-plus' aria-hidden='true') 
+          li
+            i(class='fa fa-reddit' aria-hidden='true') 
+          li
+            i(class='fa fa-whatsapp' aria-hidden='true') 
+  script(src='http://localhost:3000/javascripts/index.js') 
+
+
+
+ 
+
