@@ -10,4 +10,3 @@ function showImage() {
         obj.readAsDataURL(this.files[0])
     }
 }
-console.log('hi');
